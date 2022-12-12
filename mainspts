@@ -38,7 +38,7 @@ getgenv().PP = true
 function fistfarm()
     while getgenv().autofist == true do
 task.wait(0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
-if game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 0 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 1000 then do
+if game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 0 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 2500 then do
     local args = {
     [1] = {
         [1] = "+FS1"
@@ -47,7 +47,7 @@ if game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 0 o
 
 game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
 end
-elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 1000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 15000 then do
+elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 2500 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 100000 then do
     local args = {
     [1] = {
         [1] = "+FS2"
@@ -70,7 +70,7 @@ end
 
 bypass_teleport(teleport_table.location1)
 end
-elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 15000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 1000000000 then do
+elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 100000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 1000000000 then do
     local args = {
     [1] = {
         [1] = "+FS3"
