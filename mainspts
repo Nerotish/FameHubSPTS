@@ -1,0 +1,1055 @@
+if game.PlaceId == 2202352383 then
+
+print("whitelisted: FREE VERSION")
+print("Script Loaded")
+print("Script Made By ! Akira#8665")
+
+local teleport_table = {
+    location1 = Vector3.new(408.502655, 271.146881, 978.674377, 0.00664025173, 9.01315431e-08, 0.999977946, -2.64100901e-08, 1, -8.99581565e-08, -0.999977946, -2.58121631e-08, 0.00664025173),
+    location2 = Vector3.new(-2272.85596, 1969.26184, 1051.17773, 0.0255716704, 2.60723017e-08, 0.999673009, 2.43602205e-09, 1, -2.61431428e-08, -0.999673009, 3.10374926e-09, 0.0255716704),
+    location3 = Vector3.new(1176.37305, 4789.3374, -2293.42212, -0.998632491, -3.95903221e-09, 0.052280046, -2.56380539e-09, 1, 2.67546252e-08, -0.052280046, 2.65840008e-08, -0.998632491),
+    location4 = Vector3.new(1380.09546, 9274.4043, 1648.51624, 0.996915579, -3.45059057e-08, -0.0784817711, 2.51258498e-08, 1, -1.20506414e-07, 0.0784817711, 1.18162788e-07, 0.996915579),
+    location5 = Vector3.new(-367.317047, 15735.2031, -9.99291992, 0.987593055, -9.25644983e-09, 0.157034934, -6.04805761e-09, 1, 9.69814096e-08, -0.157034934, -9.67279234e-08, 0.987593055),
+    location6 = Vector3.new(367.4375, 249.731277, -445.11969, -0.673798978, -7.07639316e-08, -0.738914728, -1.10039039e-07, 1, 4.57462468e-09, 0.738914728, 8.43918428e-08, -0.673798978),
+    location7 = Vector3.new(354.986145, 263.766571, -490.780731, 0.990699947, 3.31926877e-08, -0.136064723, -2.35798794e-08, 1, 7.22604838e-08, 0.136064723, -6.83800678e-08, 0.990699947),
+    location8 = Vector3.new(1635.58142, 259.31955, 2246.11548, -0.168370962, -8.9582052e-08, -0.985723674, -9.77370355e-12, 1, -9.08778048e-08, 0.985723674, -1.52915511e-08, -0.168370962),
+    location9 = Vector3.new(-2291.72827, 967.205444, 1086.08533, 0.0347842872, -0.00176666398, -0.999393284, 0.00339927385, 0.999992847, -0.00164941081, 0.999389052, -0.003339838, 0.0347900428),
+    location10 = Vector3.new(-2041.38538, 714.273682, -1888.59583, 0.10452351, 9.30101152e-08, 0.994522393, 2.25983052e-10, 1, -9.35461415e-08, -0.994522393, 1.0002517e-08, 0.10452351),
+    location11 = Vector3.new(-245.995789, 286.889862, 982.303711, -0.999952376, -5.54287671e-10, -0.00975659396, -4.22985841e-10, 1, -1.34598128e-08, 0.00975659396, -1.34550451e-08, -0.999952376),
+    location12 = Vector3.new(-282.763733, 281.413361, 993.410522, 0.999561965, 8.02151234e-09, -0.0295959376, -7.87554999e-09, 1, 5.04839193e-09, 0.0295959376, -4.81309614e-09, 0.999561965),
+    location13 = Vector3.new(-277.923615, 281.417755, 1010.74915, -0.991798997, 7.24768228e-08, 0.127807632, 5.73378856e-08, 1, -1.2213016e-07, -0.127807632, -1.13800354e-07, -0.991798997),
+    location14 = Vector3.new(-2529.49927, 5486.35547, -532.882385, -0.27688539, 2.86331248e-09, -0.960902929, 1.25416442e-08, 1, -6.34076069e-10, 0.960902929, -1.22268693e-08, -0.27688539),
+    location15 = Vector3.new(-2562.40015, 5500.93848, -438.145264, -0.357594073, -1.04655072e-07, -0.93387711, 2.68302654e-12, 1, -1.12066168e-07, 0.93387711, -4.00767028e-08, -0.357594073),
+    location16 = Vector3.new(-2581.01221, 5516.36865, -502.368195, -0.308271617, 6.9324031e-08, -0.951298356, 3.64878545e-08, 1, 6.10490503e-08, 0.951298356, -1.5891148e-08, -0.308271617),
+    location17 = Vector3.new(-2543.4043, 5412.40674, -495.149231, -0.287402004, 4.30001501e-09, -0.957810044, -3.21506088e-09, 1, 5.45413981e-09, 0.957810044, 4.64694816e-09, -0.287402004),
+    location18 = Vector3.new(-129.082397, 249.185974, 529.046814, -0.999250531, 8.75580213e-08, 0.0387084484, 9.06641375e-08, 1, 7.84884975e-08, -0.0387084484, 8.19391417e-08, -0.999250531),
+    location19 = Vector3.new(459.860107, 249.190094, 888.346741, -0.251924008, 1.41391865e-09, -0.967747033, -3.02279046e-09, 1, 2.24793473e-09, 0.967747033, 3.49160501e-09, -0.251924008)
+}
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "FameHub - Premium",Name = "FameHub - Premium / SPTS", HidePremium = false, SaveConfig = true, ConfigFolder = "FameHub"})
+
+getgenv().autofist = true
+getgenv().autospeed = true
+getgenv().jumpforce = true
+getgenv().BT = true 
+getgenv().PP = true
+
+function fistfarm()
+    while getgenv().autofist == true do
+task.wait(0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+if game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 0 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 1000 then do
+    local args = {
+    [1] = {
+        [1] = "+FS1"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 1000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 15000 then do
+    local args = {
+    [1] = {
+        [1] = "+FS2"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location1)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 15000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 1000000000 then do
+    local args = {
+    [1] = {
+        [1] = "+FS3"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location2)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 1000000000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 10000000000 then do
+    local args = {
+    [1] = {
+        [1] = "+FS4"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location3)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 1000000000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 10000000000000 then do
+local args = {
+    [1] = {
+        [1] = "+FS5"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location4)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value == 10000000000000 or game:GetService("Players").LocalPlayer.PrivateStats.FistStrength.Value < 9999999999999999999999999999999999999999999999999999999999999999999999999999999 then do
+    local args = {
+    [1] = {
+        [1] = "+FS6"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location5)
+end
+end
+end
+end
+
+function speedfarm()
+    while getgenv().autospeed == true do
+local args = {
+    [1] = {
+        [1] = "+MS1"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+wait(0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+end
+end
+
+function jumpfarm()
+    while getgenv().jumpforce == true do 
+local args = {
+    [1] = {
+        [1] = "+JF1"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+wait(0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+end
+end
+
+function bodytough()
+    while getgenv().BT == true do
+    wait(0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+if game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 0 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 100 then do
+local args = {
+    [1] = {
+        [1] = "+BT1"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 100 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 10000 then do
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location6)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 10000 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 100000 then do
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location7)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 100000 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 1000000 then do
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location8)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 1000000 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 10000000 then do
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location9)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 10000000 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 1000000000 then do
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location10)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 1000000000 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 100000000000 then do
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location11)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 100000000000 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 10000000000000 then do
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location12)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value == 10000000000000 or game:GetService("Players").LocalPlayer.PrivateStats.BodyToughness.Value < 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 then do
+    local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location13)
+end
+end
+end
+end
+
+function PP1()
+    while getgenv().PP == true do
+    wait(0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
+if game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value == 0 or game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value < 1000000 then do
+    local args = {
+    [1] = {
+        [1] = "+PP1"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value == 1000000 or game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value < 1000000000 then do
+    local args = {
+    [1] = {
+        [1] = "+PP2"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location14)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value == 1000000000 or game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value < 1000000000000 then do
+    local args = {
+    [1] = {
+        [1] = "+PP3"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location15)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value == 1000000000000 or game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value < 1000000000000000 then do
+    local args = {
+    [1] = {
+        [1] = "+PP4"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location16)
+end
+elseif game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value == 1000000000000000 or game:GetService("Players").LocalPlayer.PrivateStats.PsychicPower.Value < 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 then do
+    local args = {
+    [1] = {
+        [1] = "+PP5"
+    }
+}
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location17)
+end
+end
+end
+end
+
+local Main = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://7539983773",
+	PremiumOnly = false
+})
+
+local PlayerStuff = Window:MakeTab({
+	Name = "Player Stuff",
+	Icon = "rbxassetid://2795572800",
+	PremiumOnly = false
+})
+
+local Teleports = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://6723742952",
+	PremiumOnly = false
+})
+
+local Misc = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://7059346373",
+	PremiumOnly = false
+})
+
+local ReadMe = Window:MakeTab({
+	Name = "Read Me!",
+	Icon = "rbxassetid://8516057132",
+	PremiumOnly = false
+})
+
+local MainSection = Main:AddSection({
+	Name = "Auto Farm"
+})
+
+local Main2Section = Main:AddSection({
+	Name = "Other Stuff"
+})
+
+
+local PlayerSection = PlayerStuff:AddSection({
+	Name = "Player Config's"
+})
+
+local TeleportsSection = Teleports:AddSection({
+	Name = "Teleport's"
+})
+
+local MiscSection = Misc:AddSection({
+	Name = "Extra Stuff"
+})
+
+local ReadMeSection = ReadMe:AddSection({
+	Name = "Read Me!"
+})
+
+MainSection:AddToggle({
+	Name = "Auto Farm Fist",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autofist = Value
+		fistfarm()
+	end    
+})
+
+MainSection:AddToggle({
+	Name = "Auto Farm Movement Speed",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autospeed = Value
+		speedfarm()
+	end    
+})
+
+MainSection:AddToggle({
+	Name = "Auto Farm Jump Force",
+	Default = false,
+	Callback = function(Value)
+		getgenv().jumpforce = Value
+		jumpfarm()
+	end    
+})
+
+MainSection:AddToggle({
+	Name = "Auto Farm Body Toughness",
+	Default = false,
+	Callback = function(Value)
+		getgenv().BT = Value
+		bodytough()
+	end    
+})
+
+MainSection:AddToggle({
+	Name = "Auto Farm Psychic Power",
+	Default = false,
+	Callback = function(Value)
+		getgenv().PP = Value
+		PP1()
+	end    
+})
+
+Main2Section:AddButton({
+	Name = "Destroy UI",
+	Callback = function()
+      		OrionLib:Destroy()
+      		print("UI has been DESTROYED!, Some Functions may still run...")
+  	end    
+})
+
+PlayerSection:AddButton({
+	Name = "Aimbot",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/1Zpu9gb1"))()
+      		print("AIMBOT LOADED")
+  	end    
+})
+
+PlayerSection:AddButton({
+	Name = "Player ESP (Can Lower FPS)",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/weKbnBWG"))()
+print("ESP LOADED")
+end
+})
+
+PlayerSection:AddSlider({
+	Name = "Player Speed (Requires Movement Speed to Change)",
+	Min = 1,
+	Max = 1000,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+PlayerSection:AddSlider({
+	Name = "Player Jump Power",
+	Min = 1,
+	Max = 750,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump Power",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+
+PlayerSection:AddSlider({
+	Name = "Player FOV",
+	Min = 1,
+	Max = 120,
+	Default = 80,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "FOV",
+	Callback = function(Value)
+		game.Workspace.CurrentCamera.FieldOfView = Value
+	end    
+})
+
+Teleports:AddButton({
+	Name = "Safe Zone Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location19)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Rock Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location1)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Crystal Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location2)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Blue Star Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location3)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Green Star Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location4)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Red Star Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location5)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Ice Bath Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location6)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Lava Bath Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location7)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Ice Cave Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location8)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Tornado Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location9)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Volcano Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location10)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Halloween Area 1 Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location11)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Halloween Area 2 Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location12)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Halloween Area 3 Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location13)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Psychic Area 1 Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location14)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Psychic Area 2 Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location15)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Psychic Area 3 Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location16)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Psychic Area 4 Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location17)
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Grim Reaper Teleport",
+	Callback = function()
+      		local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(-1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+  if lp.Character and
+  lp.Character:FindFirstChild('HumanoidRootPart') then
+    local cf = CFrame.new(v)
+    local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+    a:Play()
+  end
+end
+
+bypass_teleport(teleport_table.location18)
+  	end    
+})
+
+MiscSection:AddButton({
+	Name = "Infinite Yield GUI",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+MiscSection:AddButton({
+	Name = "Infinite Jumps",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/WUquqYN0", true))()
+  	end    
+})
+
+MiscSection:AddButton({
+	Name = "Anti Kick",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/BMGbkQ71", true))()
+  	end    
+})
+
+MiscSection:AddButton({
+	Name = "Control + Click Teleport",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/rS2DBx4Y", true))()
+  	end    
+})
+
+ReadMe:AddParagraph("Credits And Information","This Script will automatically go to the best place for You to train based on Your stats, If any Bugs occure please let ! Akira#8665/Fames#7177 know by joining the Discord Server: https://discord.gg/v6KTpFJs, Credits to ! Akira#8665, Fames#7177, and Shady My emotional Support Asian, UPDATES TO THE SCRIPT WILL BE ADDED SOON...")
+
+OrionLib:MakeNotification({
+	Name = "FameHub",
+	Content = "Thanks For Using This Script! Read the Console and the READ ME! Tab for info on how this script works!",
+	Image = "rbxassetid://7683701950",
+	Time = 7.5
+})
+
+OrionLib:Init()
+end
